@@ -2,12 +2,34 @@ body {
   display: grid;
   place-items: center;
   height: 100vh;
+  background: hsla(266, 75%, 55%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(266, 75%, 55%, 1) 0%,
+    hsla(340, 47%, 77%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(266, 75%, 55%, 1) 0%,
+    hsla(340, 47%, 77%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(266, 75%, 55%, 1) 0%,
+    hsla(340, 47%, 77%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8338E3", endColorstr="#E0A9BB", GradientType=1 );
 }
 .loader {
   width: 250px;
   height: 250px;
-  border: 40px solid grey;
-  border-top-color: lawngreen;
+  border: 40px solid hsla(340, 47%, 77%, 1);
+  border-top-color: coral;
+
   border-radius: 50%;
   animation: loading 1000ms ease infinite;
 }
