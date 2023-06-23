@@ -15,13 +15,14 @@ main {
 section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
   width: 100%;
 }
+section:first-child {
+  margin-bottom: 50px;
+}
 form {
-  width: 35vw;
+  min-width: 35vw;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -71,7 +72,10 @@ td {
 }
 
 @media screen and (max-width: 768px) {
-  form {
+  .form {
     width: 60vw;
+  }
+  table {
+    width: 80vw;
   }
 }

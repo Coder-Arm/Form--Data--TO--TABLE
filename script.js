@@ -11,8 +11,6 @@ function userTable(user){
 	tbody.innerHTML = html; 
 }
 
-
-
 form.addEventListener("submit",(e) => {
 	e.preventDefault();
      let user = {
