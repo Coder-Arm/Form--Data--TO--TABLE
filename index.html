@@ -1,13 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Loader</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Form data to table</title>
   </head>
+  <main>
+    <section>
+      <form>
+        <label for="firstName"
+          >First Name :
+          <input
+            type="text"
+            placeholder="First Name"
+            name="firstName"
+            id="firstName"
+            required
+          />
+        </label>
+        <label for="lastName"
+          >Last Name :
+          <input
+            type="text"
+            placeholder="Last Name"
+            name="lastName"
+            id="lastName"
+            required
+          />
+        </label>
+        <label for="rollNo"
+          >Roll No :
+          <input
+            type="number"
+            placeholder="Roll no."
+            name="rollNo"
+            id="rollNo"
+            required
+          />
+        </label>
+        <label for="collegeName"
+          >College Name :
+          <input
+            type="text"
+            placeholder="College Name"
+            name="collegeName"
+            id="collegeName"
+            required
+          />
+        </label>
+        <label for="status"
+          >Status :
+          <select name="status" id="status">
+            <option value="Pass">Pass</option>
+            <option value="Fail">Fail</option>
+            <option value="Pursuing">Pursuing</option>
+          </select>
+        </label>
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>College/University</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
   <body>
-    <div class="loader"></div>
+    <script>
+      console.clear();
+    </script>
+    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
